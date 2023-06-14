@@ -7,10 +7,9 @@ The plasma membrane of mammalian cells forms the boundary between the cell and i
 ### Objective
 The objective of this project is to apply machine learning tools to analyze and classify images of canine epithelial cells that have or have not been infected with Canid herpesvirus 1. This virus induces the formation of lamellipodia-like membrane extensions. A machine learning strategy will be established which would allow for the quantitative analysis of the density of these extensions. Such a tool would allow the analysis of the impact of the virus under various conditions on the ultrastructure of the plasma membrane of the target cell. This information will contribute to a better understanding of the interaction of this virus with the host. This strategy could also be used to study other veterinary and human viruses.
 
-## Data and Preprocessing
-
-
 ## Methodology
 
+### U-NET
 
-## Results
+### Computer Vision
+
