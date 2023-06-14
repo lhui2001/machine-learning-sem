@@ -46,4 +46,4 @@ A simple solution is to classify pixels in SEM images based on their intensity.
 #### step 2 (b) Watershed segmentation
 **Count**: 35
 
-![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/9ed44815-9473-4a28-8f56-4b0335a5f136)
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/9a9ae812-96de-41ed-bc0c-aec91fb63c73)
