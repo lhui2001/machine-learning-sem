@@ -9,7 +9,41 @@ The objective of this project is to apply machine learning tools to analyze and 
 
 ## Methodology
 
-### U-NET
+### SEM image example
+**Manual Count**: 40
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/d5ec4672-2610-4a69-b677-c90ede616ff2)
 
 ### Computer Vision
+A simple solution is to classify pixels in SEM images based on their intensity. 
 
+#### a) OpenCV segmentation
+**Count**: 39
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/115cb492-c004-4243-8493-35f7c42894ab)
+
+#### b) Watershed segmentation
+**Count**: 43
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/230722a1-f0db-46d1-8300-d65db4419054)
+
+### U-NET
+[U-NET](https://arxiv.org/abs/1505.04597v1) is a convolutional neural network used for biomedical image segmentation.  
+
+#### step 1) Semantic segmentation
+**IoU score**: 0.8374839004357684
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/3f7ac103-d685-46f0-8b00-1dbd274f78f5)
+
+#### step 2 (a) Instance segmentation
+`Number lamellipodia = Sum of segmentation area  / Average area of lamellipodia`
+
+**Count**: 38
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/570cadc9-001c-4345-a6f8-897877d0c4f7)
+
+
+#### step 2 (b) Watershed segmentation
+**Count**: 35
+
+![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/9ed44815-9473-4a28-8f56-4b0335a5f136)
