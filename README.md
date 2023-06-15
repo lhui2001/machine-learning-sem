@@ -32,11 +32,11 @@ A simple solution is to classify pixels in SEM images without using deep learnin
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/230722a1-f0db-46d1-8300-d65db4419054)
 
 #### c) Voronoi and Otsu segmentation 
-**Count**: 41
+**Count**: 43
 
 **Comments**: Correctly identifying and counting lamellipodia.
 
-![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/c986e1c9-0c20-4005-82c6-62d480d4e7e4)
+![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/e249e5ae-73d9-446f-a55d-622876ec80f3)
 
 ### U-NET
 [U-NET](https://arxiv.org/abs/1505.04597v1) is a convolutional neural network used for biomedical image segmentation. Annotations of the SEM images is required. 
