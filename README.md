@@ -10,28 +10,42 @@ The objective of this project is to apply machine learning tools to analyze and 
 ## Methodology
 
 ### SEM image example
-**Manual Count**: 40
+**Manual Count**: ~40
 
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/d5ec4672-2610-4a69-b677-c90ede616ff2)
 
 ### Computer Vision
-A simple solution is to classify pixels in SEM images based on their intensity. 
+A simple solution is to classify pixels in SEM images without using deep learning. 
 
 #### a) Edge detection
 **Count**: 39
 
-![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/115cb492-c004-4243-8493-35f7c42894ab)
+**Comments**: Inaccurate borders being identified.
+
+![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/0530cf71-5e3c-4736-a63b-8f619ee1be32)
 
 #### b) Watershed segmentation
 **Count**: 43
 
+**Comments**: Missing lamellipodia and identifying false areas.
+
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/230722a1-f0db-46d1-8300-d65db4419054)
 
+#### c) Voronoi and Otsu segmentation 
+**Count**: 41
+
+**Comments**: Correctly identifying and counting lamellipodia.
+
+![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/2f8d999b-a822-4f41-8e7b-d5f9b295a17b)
+
+
 ### U-NET
-[U-NET](https://arxiv.org/abs/1505.04597v1) is a convolutional neural network used for biomedical image segmentation.  
+[U-NET](https://arxiv.org/abs/1505.04597v1) is a convolutional neural network used for biomedical image segmentation. Annotations of the SEM images is required. 
 
 #### step 1) Semantic segmentation
 **IoU score**: 0.8374839004357684
+
+**Comments**: Missing lamellipodia on the image border
 
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/3f7ac103-d685-46f0-8b00-1dbd274f78f5)
 
@@ -40,10 +54,14 @@ A simple solution is to classify pixels in SEM images based on their intensity.
 
 **Count**: 38
 
+**Comments**: Limitation is contingent on U-NET accuracy, otherwise the formula compensates for the connected lamellipodia.
+
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/570cadc9-001c-4345-a6f8-897877d0c4f7)
 
 
 #### step 2 (b) Watershed segmentation
 **Count**: 35
+
+**Comments**: Limitation is contingent on U-NET accuracy, otherwise it has correctly separated connected lamellipodia.
 
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/9a9ae812-96de-41ed-bc0c-aec91fb63c73)
