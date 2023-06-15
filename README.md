@@ -17,7 +17,7 @@ The objective of this project is to apply machine learning tools to analyze and 
 ### Computer Vision
 A simple solution is to classify pixels in SEM images based on their intensity. 
 
-#### a) OpenCV segmentation
+#### a) Edge detection
 **Count**: 39
 
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/115cb492-c004-4243-8493-35f7c42894ab)
