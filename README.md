@@ -36,8 +36,7 @@ A simple solution is to classify pixels in SEM images without using deep learnin
 
 **Comments**: Correctly identifying and counting lamellipodia.
 
-![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/2f8d999b-a822-4f41-8e7b-d5f9b295a17b)
-
+![image](https://github.com/lucy-mhui/machine-learning-sem/assets/96440609/c986e1c9-0c20-4005-82c6-62d480d4e7e4)
 
 ### U-NET
 [U-NET](https://arxiv.org/abs/1505.04597v1) is a convolutional neural network used for biomedical image segmentation. Annotations of the SEM images is required. 
