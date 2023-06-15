@@ -9,7 +9,7 @@ The objective of this project is to apply machine learning tools to analyze and 
 
 ## Methodology
 
-### SEM image example
+### Ground Truth image example
 **Manual Count**: ~40
 
 ![image](https://github.com/lhui2001/machine-learning-sem/assets/96440609/d5ec4672-2610-4a69-b677-c90ede616ff2)
