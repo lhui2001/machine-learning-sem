@@ -1,4 +1,6 @@
-# create bounding boxes from masks
+# https://github.com/nikhilroxtomar/Semantic-Segmentation-Mask-to-Bounding-Box
+# https://www.youtube.com/watch?v=RmLDL7AVXUc&t=684s&pp=ygUUbWFzayB0byBib3VuZGluZyBib3g%3D
+# create mask outines from masks
 
 import os
 import numpy as np
