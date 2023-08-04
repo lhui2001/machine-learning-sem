@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 import numpy as np
 
-path = "C:/Users/lucyh/Desktop/Single Class/Images/2023-05-25/Images/"
+path = "C:/.../Images/"
 for file in os.listdir(path):
     if file.endswith(".tiff"):
         img = Image.open(path+str(file))
