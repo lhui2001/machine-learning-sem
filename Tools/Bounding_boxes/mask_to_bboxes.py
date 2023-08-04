@@ -1,5 +1,6 @@
 # https://github.com/nikhilroxtomar/Semantic-Segmentation-Mask-to-Bounding-Box
 # https://www.youtube.com/watch?v=RmLDL7AVXUc&t=684s&pp=ygUUbWFzayB0byBib3VuZGluZyBib3g%3D
+# Unedited code from source
 
 import os
 import numpy as np
@@ -27,7 +28,7 @@ def mask_to_border(mask):
 
     return border
 
-""" Mask to bounding boxes """
+""" Convert a mask to bounding boxes """
 def mask_to_bbox(mask):
     bboxes = []
 
@@ -52,8 +53,8 @@ def parse_mask(mask):
 
 if __name__ == "__main__":
     """ Load the dataset """
-    images = sorted(glob(os.path.join("data", "image", "*")))
-    masks = sorted(glob(os.path.join("data", "mask", "*")))
+    images = sorted(glob(os.path.join("data", "image", "*")))  # load images frome directory data containing directory image in current working directory
+    masks = sorted(glob(os.path.join("data", "mask", "*")))    # load masks from directory data containing directory mask in current working directory
 
     """ Create folder to save images """
     create_dir("results")
